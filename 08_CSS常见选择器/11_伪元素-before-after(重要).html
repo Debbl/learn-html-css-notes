@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box::before {
+      content: "123";
+      user-select: text;
+    }
+
+    .box::after {
+      content: url(https://avatars.githubusercontent.com/u/61053131?s=40&v=4);
+      position: relative;
+      left: 2px;
+      top: 2px;
+    }
+
+    .item::after {
+      content: "321";
+      color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    我是 div 元素
+  </div>
+
+  <div class="box2 item">box2</div>
+  <div class="box3 item">box3</div>
+</body>
+
+</html>
