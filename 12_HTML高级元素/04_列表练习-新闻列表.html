@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    a {
+      text-decoration: none;
+      color: #333;
+    }
+
+    ul,
+    li {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .item {
+      display: block;
+      margin: 12px 0;
+    }
+
+    .item:hover {
+      color: red;
+      /* text-decoration: underline; */
+    }
+
+    .item>span {
+      padding: 0 6px;
+    }
+
+    .item .icon.new {
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      background-image: url(./images/new_icon.svg);
+    }
+
+    .item .icon.hot {
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      background-image: url(./images/hot_icon.svg);
+    }
+
+    ul>li:nth-child(1) .item>span:first-child {
+      color: #f00;
+    }
+
+    ul>li:nth-child(2) .item>span:first-child {
+      color: #0f0;
+    }
+
+    ul>li:nth-child(3) .item>span:first-child {
+      color: #00f;
+    }
+
+    .icon {
+      position: relative;
+      top: 3px;
+      left: 2px;
+    }
+  </style>
+</head>
+
+<body>
+  <ul>
+    <li>
+      <a href="#" class="item">
+        <span>1</span>
+        <span>一花一世界明媚春天杜鹃花开满枝头色彩艳丽繁花似锦</span>
+        <i class="icon new"></i>
+      </a>
+    </li>
+    <li>
+      <a href="#" class="item">
+        <span>2</span>
+        <span>一花一世界明媚春天杜鹃花开满枝头色彩艳丽繁花似锦</span>
+        <i class="icon new"></i>
+      </a>
+    </li>
+    <li>
+      <a href="#" class="item">
+        <span>3</span>
+        <span>一花一世界明媚春天杜鹃花开满枝头色彩艳丽繁花似锦</span>
+        <i class="icon hot"></i>
+      </a>
+    </li>
+    <li>
+      <a href="#" class="item">
+        <span>4</span>
+        <span>一花一世界明媚春天杜鹃花开满枝头色彩艳丽繁花似锦</span>
+        <i class="icon"></i>
+      </a>
+    </li>
+    <li>
+      <a href="#" class="item">
+        <span>5</span>
+        <span>一花一世界明媚春天杜鹃花开满枝头色彩艳丽繁花似锦</span>
+        <i class="icon"></i>
+      </a>
+    </li>
+    <li>
+      <a href="#" class="item">
+        <span>6</span>
+        <span>一花一世界明媚春天杜鹃花开满枝头色彩艳丽繁花似锦</span>
+        <i class="icon"></i>
+      </a>
+    </li>
+  </ul>
+</body>
+
+</html>
