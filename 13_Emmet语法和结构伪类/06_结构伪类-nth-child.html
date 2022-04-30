@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    ul li:nth-child(2n + 1) {
+      color: red;
+    }
+
+    ul li:nth-child(2n) {
+      color: green;
+    }
+
+    div>div:nth-child(-n + 3) {
+      color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <ul>
+    <li>列表元素001</li>
+    <li>列表元素002</li>
+    <li>列表元素003</li>
+    <li>列表元素004</li>
+    <li>列表元素005</li>
+    <li>列表元素006</li>
+    <li>列表元素007</li>
+    <li>列表元素008</li>
+    <li>列表元素009</li>
+    <li>列表元素010</li>
+  </ul>
+
+  <div>
+    <div>div元素001</div>
+    <div>div元素002</div>
+    <div>div元素003</div>
+    <div>div元素004</div>
+    <div>div元素005</div>
+    <div>div元素006</div>
+    <div>div元素007</div>
+    <div>div元素008</div>
+    <div>div元素009</div>
+    <div>div元素010</div>
+  </div>
+</body>
+
+</html>
