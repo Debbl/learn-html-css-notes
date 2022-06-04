@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .sprite_01 {
+      background-image: url(./images/music_sprite_01.png);
+      display: inline-block;
+    }
+
+    .sprite_02 {
+      background-image: url(./images/music_sprite_02.png);
+      display: inline-block;
+    }
+
+    .sprite_02_icon_music {
+      width: 14px;
+      height: 11px;
+      background-position: 0 -24px;
+    }
+
+    .sprite_02_icon_play {
+      width: 16px;
+      height: 17px;
+      background-position: 0 0;
+    }
+
+    .item {
+      display: block;
+      width: 140px;
+      margin: 0 auto;
+    }
+
+    .image-info {
+      position: relative;
+    }
+
+    .image-info .cover {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background-image: url(./images/music_sprite_01.png);
+      background-position: 0 0;
+    }
+
+    .image-info .panel {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 3px;
+      height: 27px;
+      background-position: 0 -537px;
+    }
+
+    .image-info .panel .sprite_02_icon_music {
+      position: absolute;
+      top: 6px;
+      left: 6px;
+    }
+
+    .image-info .panel .count {
+      font-size: 12px;
+      margin-left: 21px;
+      color: #ccc;
+    }
+
+    .image-info .panel .sprite_02_icon_play {
+      position: absolute;
+      top: 6px;
+      right: 6px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="item">
+    <div class="image-info">
+      <img src="./images/music_album01.jpg" alt="封面">
+      <a href="#" class="cover"></a>
+      <div class="panel sprite_01">
+        <i class="sprite_02 sprite_02_icon_music"></i>
+        <span class="count">62万</span>
+        <i class="sprite_02 sprite_02_icon_play"></i>
+      </div>
+    </div>
+    <div class="info">
+      <span>天气好的话，把耳机分给我一半吧</span>
+    </div>
+    <i class="sprite_02 sprite_02_icon_music"></i>
+    <i class="sprite_02 sprite_02_icon_play"></i>
+  </div>
+</body>
+
+</html>
