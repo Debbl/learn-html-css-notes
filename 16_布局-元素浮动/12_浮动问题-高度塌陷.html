@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      width: 600px;
+      /* height: 600px; */
+      background-color: red;
+      margin: 0 auto;
+    }
+
+    .container::after {
+      display: block;
+      content: "";
+      clear: both;
+
+      /* 浏览器兼容 */
+      visibility: hidden;
+      height: 0;
+    }
+
+    .container {
+      /* IE6/7 兼容 */
+      *zoom: 1;
+    }
+
+    .box {
+      /* float 脱离文档流， 不向父元素汇报宽度 */
+      float: left;
+      width: 100px;
+      height: 100px;
+      background-color: green;
+    }
+
+
+
+    /* 可以用 clean 属性 清除浮动 */
+    /* .clear-float {
+      clear: both;
+    } */
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="box"></div>
+    <div class="clear-float"></div>
+  </div>
+</body>
+
+</html>
