@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="./js/itemRandomColor.js" defer></script>
+  <style>
+    .container {
+      display: flex;
+      /* flex-direction: row;  */
+      /* flex-direction: row-reverse; */
+      /* flex-direction: column; */
+      /* flex-direction: column-reverse; */
+      flex-wrap: wrap;
+      /* justify-content: flex-start; */
+      /* justify-content: flex-end; */
+      /* item 周围平分剩余空间 */
+      /* justify-content: space-around; */
+      /* 两端对齐 */
+      /* justify-content: space-between; */
+      /* item 之间间距相同 */
+      justify-content: space-evenly;
+      width: 700px;
+      height: 600px;
+      background-color: red;
+    }
+
+    .item {
+      width: 100px;
+      height: 100px;
+      background-color: green;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="item item1">1</div>
+    <div class="item item2">2</div>
+    <div class="item item3">3</div>
+    <div class="item item4">4</div>
+    <div class="item item5">5</div>
+    <div class="item item6">6</div>
+  </div>
+</body>
+
+</html>
