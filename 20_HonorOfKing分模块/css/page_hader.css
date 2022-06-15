@@ -1,0 +1,98 @@
+.header {
+  background-color: rgba(0, 0, 0, .8);
+}
+
+.header .area {
+  display: flex;
+  height: 84px;
+  justify-content: space-between;
+}
+
+.header .area .left-area {
+  display: flex;
+}
+
+.header .area .left-area .logo a {
+  display: block;
+  position: relative;
+  width: 200px;
+  height: 54px;
+  top: 50%;
+  transform: translate(0, -50%);
+  text-indent: -9999px;
+  background: url(../images/logo.png) no-repeat center center;
+}
+
+.header .area .left-area .nav-list {
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+}
+
+
+.header .area .left-area .nav-list .item {
+  width: 110px;
+  height: 100%;
+}
+
+.header .area .left-area .nav-list .item.active,
+.header .area .left-area .nav-list .item:hover {
+  background: url(../images/main_sprite.png) no-repeat 0 0;
+}
+
+.header .area .left-area .nav-list .item a {
+  display: block;
+  height: 100%;
+  padding-top: 20px;
+  text-align: center;
+  color: #c9c9dd;
+  font-size: 18px;
+}
+
+.header .area .left-area .nav-list .item.active a,
+.header .area .left-area .nav-list .item a:hover {
+  color: #e4b653;
+}
+
+.header .area .left-area .nav-list .item a .desc {
+  margin-top: 8px;
+  font-size: 12px;
+}
+
+.header .area .left-area .search {
+  margin-left: 10px;
+}
+
+.header .area .left-area .search a{
+  position: relative;
+  display: block;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 27px;
+  height: 26px;
+  background: url(../images/nav_search.png);
+}
+
+.header .area .right-area {
+  display: flex;
+  align-items: center;
+}
+
+.header .area .right-area .login-image img {
+  border: 1px solid #d9ad50;
+  border-radius: 50%;;
+}
+
+.header .area .right-area .info {
+  margin-left: 12px;
+}
+
+.header .area .right-area .info a {
+  color: #fff;
+}
+
+.header .area .right-area .info p {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #858792;
+}
